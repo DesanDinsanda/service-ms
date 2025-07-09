@@ -2,12 +2,12 @@ package com.example.ServiceManagement.data;
 import jakarta.persistence.*;
 
 @Entity
-@Table
+@Table(name = "service")
 public class Category {
 
     @Id
     @Column(name = "id")
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "category")

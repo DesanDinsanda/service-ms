@@ -1,6 +1,5 @@
-package com.example.ServiceManagement.Service;
+package com.example.ServiceManagement;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
