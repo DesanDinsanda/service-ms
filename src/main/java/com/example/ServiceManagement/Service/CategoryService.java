@@ -1,5 +1,6 @@
 package com.example.ServiceManagement.Service;
 
+import com.example.ServiceManagement.Service.interservice.WorkerService;
 import com.example.ServiceManagement.data.Category;
 import com.example.ServiceManagement.data.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ import java.util.Optional;
 public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
+    @Autowired
+    private WorkerService workerService;
 
     public List<Category> getAllCategories() {
         return categoryRepository.findAll();
@@ -35,6 +38,15 @@ public class CategoryService {
 
     public List<Category> searchCategory(String name){
         return categoryRepository.searchCategory(name);
+    }
+
+    public Boolean serviceExistsById(int id){
+        return categoryRepository.existsById(id);
+    }
+
+    public void deleteCategory(int id){
+        categoryRepository.deleteById(id);
+        workerService.deleteSkillsByDeletedServiceId(id);
     }
 
 }
