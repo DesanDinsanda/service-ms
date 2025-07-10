@@ -1,5 +1,6 @@
 package com.example.ServiceManagement.Service.interservice;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -7,8 +8,8 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class WorkerService {
     private WebClient webClient;
 
-    public WorkerService(WebClient.Builder builder){
-        this.webClient = builder.baseUrl("http://localhost:8087/worker-app").build();
+    public WorkerService(WebClient.Builder builder, @Value("${service.worker.url}") String url){
+        this.webClient = builder.baseUrl(url).build();
     }
 
     public void deleteSkillsByDeletedServiceId(int id){
