@@ -1,6 +1,6 @@
-package com.example.ServiceManagement.Service;
+package com.example.ServiceManagement.service;
 
-import com.example.ServiceManagement.Service.interservice.WorkerService;
+import com.example.ServiceManagement.service.interservice.WorkerService;
 import com.example.ServiceManagement.data.Category;
 import com.example.ServiceManagement.data.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
