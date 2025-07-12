@@ -1,7 +1,7 @@
-package com.example.ServiceManagement.tcontroller;
+package com.example.ServiceManagement.controller;
 
-import com.example.ServiceManagement.tdata.Category;
-import com.example.ServiceManagement.tinterservice.CategoryService;
+import com.example.ServiceManagement.data.Category;
+import com.example.ServiceManagement.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

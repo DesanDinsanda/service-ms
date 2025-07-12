@@ -1,4 +1,4 @@
-package com.example.ServiceManagement.tdata;
+package com.example.ServiceManagement.data;
 import jakarta.persistence.*;
 
 @Entity

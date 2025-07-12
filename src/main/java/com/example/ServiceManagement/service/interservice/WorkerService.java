@@ -1,4 +1,4 @@
-package com.example.ServiceManagement.tinterservice.interservice;
+package com.example.ServiceManagement.service.interservice;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
