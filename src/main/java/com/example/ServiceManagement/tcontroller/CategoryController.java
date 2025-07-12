@@ -1,12 +1,10 @@
-package com.example.ServiceManagement.Controller;
+package com.example.ServiceManagement.tcontroller;
 
-import com.example.ServiceManagement.data.Category;
-import com.example.ServiceManagement.Service.CategoryService;
+import com.example.ServiceManagement.tdata.Category;
+import com.example.ServiceManagement.tinterservice.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package com.example.ServiceManagement.Service;
+package com.example.ServiceManagement.tinterservice;
 
-import com.example.ServiceManagement.Service.interservice.WorkerService;
-import com.example.ServiceManagement.data.Category;
-import com.example.ServiceManagement.data.CategoryRepository;
+import com.example.ServiceManagement.tinterservice.interservice.WorkerService;
+import com.example.ServiceManagement.tdata.Category;
+import com.example.ServiceManagement.tdata.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
